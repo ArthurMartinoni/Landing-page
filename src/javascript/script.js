@@ -5,19 +5,32 @@ $(document).ready(function () {
   });
 });
 
-function createReview(grade, totalReviews) {
-  let starsHtml = " ";
+new Swiper(".card-wrapper", {
+  loop: true,
+  spaceBetween: 30,
 
-  for (let i = 0; i < notEqual; i++) {
-    starsHtml += '<i class="fa-solid fa-star"></i>';
-  }
-  const finalLayout = `
-<div class="course-reviews">
-${starsHtml}
-<span>(${totalReviews}+)</span>
-</div>
-`;
-  document.getElementById("container-courses").innerHTML += finalLayout;
-}
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
 
-createReview(5, 500);
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 1,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});

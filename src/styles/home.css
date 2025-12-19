@@ -62,7 +62,7 @@
   display: block;
   max-width: 100%;
   height: auto;
-  transform: translate(40px, -30px); /* x (direita), y (para cima negativo) */
+  transform: translate(40px, -30px);
   transition: transform 0.18s ease;
 }
 
@@ -100,9 +100,131 @@
   #phone_button button {
     display: none;
   }
+  .card-wrapper {
+    margin: 0 10px 25px;
+  }
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
 }
 
-.course-reviews i {
-  color: #ffd700;
-  margin-right: 3px;
+#carrossel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(#eceffe #ced6fb);
+}
+
+.card-wrapper {
+  max-width: 1100px;
+  margin: 0 auto 35px;
+  padding: 20px 60px 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-list .card-item {
+  list-style: none;
+  display: flex;
+  height: auto;
+}
+
+.card-list .card-item .card-link {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.4s ease;
+  box-sizing: border-box;
+}
+
+.card-list .card-item .card-link:active {
+  cursor: grabbing;
+}
+
+.card-list .card-item .card-link:hover {
+  border-color: #8b3eff;
+}
+
+.card-list .card-link .card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+  color: #8b3eff;
+  margin: 16px 0 18px;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  background: #c7baf79d 18px;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.card-list .card-link .card-title {
+  font-size: 1.19rem;
+  color: black;
+  font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  color: #8b3eff;
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border: 2px solid #8b3eff;
+  transform: rotate(-45deg);
+  transition: all 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+  color: white;
+  background: #8b3eff;
+}
+
+.card-wrapper .swiper-pagination {
+  bottom: 0px !important;
+  padding-bottom: 20px;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background: #8b3eff;
+}
+
+.card-wrapper .swiper-button-prev {
+  left: 0;
+}
+
+.card-wrapper .swiper-button-next {
+  right: 0;
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button {
+  color: #8b3eff;
+  margin-top: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
 }

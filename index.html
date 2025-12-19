@@ -10,6 +10,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="src/styles/styles.css" />
     <link rel="stylesheet" href="src/styles/header.css" />
     <link rel="stylesheet" href="src/styles/home.css" />
@@ -96,7 +100,7 @@
               <i class="fa-brands fa-instagram"></i>
             </a>
             <a href="https://github.com/ArthurMartinoni">
-              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-github"></i>
             </a>
           </div>
         </div>
@@ -104,32 +108,125 @@
           <img src="src/images/programmer.png" alt="" />
         </div>
       </section>
-
-      <section id="menu">
-        <h2 class="section-title">Contents</h2>
-        <h3 class="section-subtitle">Our recommended classes</h3>
-
-        <div id="courses">
-          <div class="course">
-            <div class="course-heart">
-              <i class="fa-solid fa-heart"></i>
-            </div>
-
-            <img src="src/images/Python-Logo.png" class="course-heart" alt="" />
-
-            <h3 class="course-title">Lorem ipsum</h3>
-
-            <span class="course-description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
-              unde mollitia eligendi minima fugit tenetur rem consequatur itaque
-              nostrum iste est dolores voluptates, quaerat quo, error iure nihil
-              sunt molestiae?
-            </span>
-          </div>
+      <div id="carrossel" class="container">
+        <div class="card-wrapper swiper">
+          <ul class="card-list swiper-wrapper">
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img
+                  src="src/images/react.png"
+                  alt="React task manager"
+                  class="card-image"
+                />
+                <p class="badge">Task manager</p>
+                <h2 class="card-title">
+                  A responsive React.js app that fetches and displays real-time
+                  data and images from an external API using reusable
+                  components.
+                </h2>
+                <button class="card-button">
+                  <i class="fa-solid fa-arrow-right"> </i>
+                </button>
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img
+                  src="src/images/Python-Logo.png"
+                  alt="React task manager"
+                  class="card-image"
+                />
+                <p class="badge">Automated Black & White Box Testing Suite</p>
+                <h2 class="card-title">
+                  An automation tool for web testing that validates both user
+                  functionality (Black Box) and internal code logic (White Box)
+                  to ensure full application reliability.
+                </h2>
+                <button class="card-button">
+                  <i class="fa-solid fa-arrow-right"> </i>
+                </button>
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img
+                  src="src/images/Python-Logo.png"
+                  alt="React task manager"
+                  class="card-image"
+                />
+                <p class="badge">Automated Black & White Box Testing Suite</p>
+                <h2 class="card-title">
+                  An automation tool for web testing that validates both user
+                  functionality (Black Box) and internal code logic (White Box)
+                  to ensure full application reliability.
+                </h2>
+                <button class="card-button">
+                  <i class="fa-solid fa-arrow-right"> </i>
+                </button>
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img
+                  src="src/images/Python-Logo.png"
+                  alt="React task manager"
+                  class="card-image"
+                />
+                <p class="badge">Automated Black & White Box Testing Suite</p>
+                <h2 class="card-title">
+                  An automation tool for web testing that validates both user
+                  functionality (Black Box) and internal code logic (White Box)
+                  to ensure full application reliability.
+                </h2>
+                <button class="card-button">
+                  <i class="fa-solid fa-arrow-right"> </i>
+                </button>
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img
+                  src="src/images/Python-Logo.png"
+                  alt="React task manager"
+                  class="card-image"
+                />
+                <p class="badge">Automated Black & White Box Testing Suite</p>
+                <h2 class="card-title">
+                  An automation tool for web testing that validates both user
+                  functionality (Black Box) and internal code logic (White Box)
+                  to ensure full application reliability.
+                </h2>
+                <button class="card-button">
+                  <i class="fa-solid fa-arrow-right"> </i>
+                </button>
+              </a>
+            </li>
+            <li class="card-item swiper-slide">
+              <a href="#" class="card-link">
+                <img
+                  src="src/images/Python-Logo.png"
+                  alt="React task manager"
+                  class="card-image"
+                />
+                <p class="badge">Automated Black & White Box Testing Suite</p>
+                <h2 class="card-title">
+                  An automation tool for web testing that validates both user
+                  functionality (Black Box) and internal code logic (White Box)
+                  to ensure full application reliability.
+                </h2>
+                <button class="card-button">
+                  <i class="fa-solid fa-arrow-right"> </i>
+                </button>
+              </a>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+          <div class="swipper-slide-button swiper-button-prev"></div>
+          <div class="swipper-slide-button swiper-button-next"></div>
         </div>
-      </section>
+      </div>
     </main>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="src/javascript/script.js"></script>
   </body>
 </html>
