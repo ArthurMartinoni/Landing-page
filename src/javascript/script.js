@@ -39,3 +39,16 @@ new Swiper(".card-wrapper", {
     },
   },
 });
+
+let lastScrollTop = 0;
+const header = document.querySelector("header");
+window.addEventListener("scroll", function () {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (currentScroll > lastScrollTop && currentScroll > 50) {
+    header.classList.add("hide");
+  } else {
+    header.classList.remove("hide");
+  }
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});

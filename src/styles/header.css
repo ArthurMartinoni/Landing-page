@@ -1,7 +1,18 @@
 header {
   width: 100%;
   padding: 28px 8%;
-  padding: 28px 8%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #eceffe;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(0);
+}
+
+header.hide {
+  transform: translateY(-100%);
+  box-shadow: none;
 }
 
 #navbar {

@@ -68,11 +68,11 @@
 
 .shape {
   background-color: #c7baf79d;
-  width: 50%;
-  height: 100%;
+  width: 45%;
+  height: 90%;
   position: absolute;
   border-radius: 40% 30% 0% 20%;
-  top: 0;
+  top: 10;
   right: 0;
   z-index: 1;
 }
@@ -110,9 +110,9 @@
 
 #carrossel {
   display: flex;
-  align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: auto;
+  padding: 60px 0;
   background: linear-gradient(#eceffe #ced6fb);
 }
 
