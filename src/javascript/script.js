@@ -8,6 +8,11 @@ $(document).ready(function () {
 new Swiper(".card-wrapper", {
   loop: true,
   spaceBetween: 30,
+  centeredSlides: false,
+
+  autoplay: {
+    delay: 3000,
+  },
 
   // If we need pagination
   pagination: {
